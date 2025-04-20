@@ -1,0 +1,9 @@
+176544; Medor; 2010; chien; 23,5; "chien très joueur";
+245619; Pookie; 2019; chien, 10,4; 
+576211; Choupette; 2024; chat; 3,1; "chat timide";
+687275; Haribo ; 2006; autruche; 56,7; "autruche agité"
+576314; Upsi; 2007; chat; 5,0; 
+097872; Felix; 2016; chien; 14,7;
+576762; Tania; 2023; hamster; 1,8;
+334510; Athena; 2005; autruche; 57,2;
+
