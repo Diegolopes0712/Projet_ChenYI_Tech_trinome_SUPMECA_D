@@ -1,11 +1,11 @@
 10
 176544 Medor 2010 chien 23,5 chien_très_joueur
 245619 Pookie 2019 chien 10,4 _
-576211 Choupette 2024 chat 3,1 "chat timide"
-687275 Haribo 2006 autruche 56,7 "autruche agitée"
+576211 Choupette 2024 chat 3,1 chat_timide
+687275 Haribo 2006 autruche 56,7 autruche_agitée
 576314 Upsi 2007 chat 5,0 _
 097872 Felix 2016 chien 14,7 _
 576762 Tania 2023 hamster 1,8 _
 334510 Athena 2005 autruche 57,2 _
-467413 Pacha 2022 hamster 0,5 "hamster très fou"
-333579 Zorro 2018 chien 50,0 "aboie beaucoup"
+467413 Pacha 2022 hamster 0,5 hamster_très_fou
+333579 Zorro 2018 chien 50,0 aboie_beaucoup
