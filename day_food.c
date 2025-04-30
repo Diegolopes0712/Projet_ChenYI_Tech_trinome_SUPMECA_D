@@ -25,7 +25,7 @@ int main(){
     float df;
     Animal* tab[taille];
     df = day_food(tab,taille);
-    printf(" La quantité de nourriture par jour est : %f ");
+    printf(" La quantité de nourriture par jour est : %f ", df);
     return 0;
 }
      
