@@ -24,7 +24,7 @@ Haribo ;
 2006;
 autruche;
 56,7;
-"autruche agité"
+"autruche agitée"
 
 576314;
 Upsi;
