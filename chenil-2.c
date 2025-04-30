@@ -62,12 +62,12 @@ if(fichier==NULL){
     printf("Ouverture du fichier impossible");
     exit(1);
 }
-x.numid=tab[0]=fgets(fichier);
-x.nom=tab[1]=fgets(fichier);
-x.anneenaissance=tab[2]=fgets(fichier);
-x.espece=tab[3]=fgets(fichier);
-x.poids=tab[4]=fgets(fichier);
-x.commentaire=tab[5]=fgets(fichier);
+tab[0]=fgets(x.numid,199,fichier);
+tab[1]=fgets(x.nom,199,fichier);
+tab[2]=fgets(x.anneenaissance,199,fichier);
+tab[3]=fgets(x.espece,199,fichier);
+tab[4]=fgets(x.poids,199,fichier);
+tab[5]=fgets(x.commentaire,199,fichier);
 }
 return 0;
 }
