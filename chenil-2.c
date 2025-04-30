@@ -54,13 +54,13 @@ Animal constructeurAnimal(){
 int main(){
 Animal x;
 int*fichier;
-fichier=fopen("chenil.txt",'r');
+fichier=fopen("chenil.txt","r");
 x=constructeurAnimal();
 if(fichier==NULL){
     printf("Ouverture du fichier impossible");
     exit(1);
 }
-FILE*fopen(Animal*'chenil.txt', Animal*'r');
+FILE*fopen(Animal*"chenil.txt", Animal*"r");
 return 0;
 }
 
