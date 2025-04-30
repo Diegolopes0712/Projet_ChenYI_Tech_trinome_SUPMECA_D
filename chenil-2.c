@@ -54,13 +54,21 @@ Animal constructeurAnimal(){
 int main(){
 Animal x;
 int*fichier;
+char*tab;
 fichier=fopen("chenil.txt","r");
+for(int i=0; i<6; i++){
 x=constructeurAnimal();
 if(fichier==NULL){
     printf("Ouverture du fichier impossible");
     exit(1);
 }
-FILE*fopen(Animal*"chenil.txt", Animal*"r");
+x.numid=tab[0]=fgets(fichier);
+x.nom=tab[1]=fgets(fichier);
+x.anneenaissance=tab[2]=fgets(fichier);
+x.espece=tab[3]=fgets(fichier);
+x.poids=tab[4]=fgets(fichier);
+x.commentaire=tab[5]=fgets(fichier);
+}
 return 0;
 }
 
