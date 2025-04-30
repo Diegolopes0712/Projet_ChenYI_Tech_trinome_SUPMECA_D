@@ -2,7 +2,7 @@
 
 
 typedef enum{
- chien, chat, hamster, autruche;
+ chien, chat, hamster, autruche
 }Espece;
 
 typedef struct{
