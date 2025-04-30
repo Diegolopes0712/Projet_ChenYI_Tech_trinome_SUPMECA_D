@@ -52,3 +52,18 @@ Athena;
 2005;
 autruche; 
 57,2;
+
+467413;
+Pacha;
+2022;
+hamster;
+0,5;
+"hamster très fou"
+
+
+333579;
+Zorro;
+2018;
+chien;
+50,0;
+"aboie beaucoup"
