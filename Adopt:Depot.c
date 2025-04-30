@@ -8,30 +8,53 @@
  
  //fonction pour déposer un animal//
  Animal depotAnimal(int numid, char* nom, Espece espece, int anneenaissance, float poids, char* commentaire){
-   int nbAdepot, nbAnimal;
+   int nbAdepot, nbAnimal, sûr?;
    printf("Combien d'animaux voulez-vous déposer ? \n");
    scanf("%d",&nbAdepot);
-    if(nbAnimal==50){
-       printf("Désolé, mais le chenYl est plein ! \n Revenez demain ! \n");
-       exit(0);
-    }
-    else{
-       if(nbAdepot=1 && nbAnimal+nbAdepot<=50){
+       
+       if(nbAdepot=1 && nbAnimal+nbAdepot<=50){  //Pour déposer 1 animal//
        printf("Votre animal a bien été déposé. \n");
        nbAnimal+=nbAdepot;
         return nbAnimal;
        }
-       else if(nbAdepot>1 && nbAnimal+nbAdepot<=50){
+       else(nbAdepot>1){
+           if(nbAnimal+nbAdepot<=50){
+             printf("Vos animaux ont bien été déposés ! \n");
+             nbAnimal+=nbAdepot;
+             return nbAnimal;
+           }
+           else{
+             nbAdepot=(nbAnimal+nbAdepot)-50;
+             printf("Vous pouvez déposer %d animaux à cause du manque de place ! \n, nbAdepot);
+             printf("Voulez-vous quand même les déposer ? \n oui:1 ou non:2 \n");
+             scanf("%d",&sür?);
+               if(sür?==1){
+               printf("Vos animaux ont bien été déposés ! \n");
+               nbAnimal=50;
+               return nbAnimal;
+               }
+               else if(sur?==2
+           }
+       }
+       
+  
+   
+  
+    /* if(nbAdepot=1 && nbAnimal+nbAdepot<=50){  //Pour déposer 1 animal//
+       printf("Votre animal a bien été déposé. \n");
+       nbAnimal+=nbAdepot;
+        return nbAnimal;
+       }
+       else if(nbAdepot>1 && nbAnimal+nbAdepot<=50){  //Pour déposer plusieurs animaux//
        printf("Vos animaux ont bien été déposés. \n");
        nbAnimal+=nbAdepot;
         return nbAnimal;
        }
        else{
        
-    }   
+       } */
+ 
  }
- 
- 
  
  
  int main(){
