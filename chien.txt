@@ -1,0 +1,3 @@
+176544; Medor; 2010; chien; 23,5; "chien très joueur";
+245619; Pookie; 2019; chien, 10,4; 
+097872; Felix; 2016; chien; 14,7;
