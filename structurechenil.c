@@ -8,11 +8,11 @@ typedef enum{ //liste des espèces présentes dans le chenil
 typedef struct{ //Caractéristique d'un animal
 
 	int numid;
-	char* nom;
+	char nom[100];
 	int anneenaissance;
 	Espece espece;
 	float poids;
-	char* commentaire;
+	char commentaire[1000];
 
 }Animal;
 
@@ -27,7 +27,7 @@ Animal constructeurAnimal(){ //ici on crée un animal
 	printf(" En quelle année est-t-il né ? ");
 	scanf("%d", &a.anneenaissance);
 	printf(" Quelle est son Espèce ? ");
-	scanf("%s", a.espece);
+	scanf("%d", &a.espece);
 	printf(" Quel est son poids ? ");
 	scanf("%f", &a.poids);
 	printf(" Un commentaire ? oui ou non ");
@@ -56,7 +56,7 @@ int main(){
 
 FILE* fichier=NULL;
 
-fichier=fopen("chenil.txt","r");
+fichier=fopen("chenil.txt","r+");
 
 
 if(fichier==NULL){
@@ -73,9 +73,9 @@ Animal *tab=malloc(nombre_animal*sizeof(Animal));
 if(tab==NULL){
 	exit(2);
 	}
-
+	
 for (int i=0; i<nombre_animal;i++){ // ici on récupère des animaux présents dans le chenil
-	fscanf(fichier,"%d %s %d %d %f %s", tab[i].numid, tab[i].nom, tab[i].anneenaissance, tab[i].espece, tab[i].poids, tab[i].commentaire);
+	fscanf(fichier,"%d %s %d %d %f %s\n", &tab[i].numid, tab[i].nom, &tab[i].anneenaissance, &tab[i].espece, &tab[i].poids, tab[i].commentaire);
 }
 
 free(tab);
