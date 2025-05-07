@@ -29,11 +29,13 @@
              printf("Voulez-vous quand même les déposer ? \n oui:1 ou non:2 \n");
              scanf("%d",&sür?);
                if(sür?==1){
-               printf("Vos animaux ont bien été déposés ! \n");
-               nbAnimal=50;
-               return nbAnimal;
+                  printf("Vos animaux ont bien été déposés ! \n");
+                  nbAnimal=50;
+                  return nbAnimal;
                }
-               else if(sur?==2
+               else if(sur?==2){
+                  printf("Vos animaux rentrent avec vous aujourd'hui ! \n");
+               } 
            }
        }
        
