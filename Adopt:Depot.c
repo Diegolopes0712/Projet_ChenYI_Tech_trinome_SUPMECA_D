@@ -1,4 +1,4 @@
-#include<chenil.h>
+#include "chenil.h"
  
  //fonction pour adopter un animal//
  Animal adoptAnimal(Espece espece){
@@ -35,7 +35,11 @@
                }
                else if(sur?==2){
                   printf("Vos animaux rentrent avec vous aujourd'hui ! \n");
+                  return nbAnimal;
                } 
+               else{
+                  printf("Veuillez saisir une valeur cohérente: 1 ou 2 \n);
+                  exit(1); 
            }
        }
        
@@ -56,7 +60,7 @@
        
        } */
  
- }
+      }
  
  
  int main(){
