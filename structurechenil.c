@@ -1,11 +1,11 @@
 #include "chenil.h"
 
 
-typedef enum{
- chien, chat, hamster, autruche
+typedef enum{ //liste des espèces présentes dans le chenil
+ chien=0, chat=1, hamster=2, autruche=3
 }Espece;
 
-typedef struct{
+typedef struct{ //Caractéristique d'un animal
 
 	int numid;
 	char* nom;
@@ -17,7 +17,7 @@ typedef struct{
 }Animal;
 
 
-Animal constructeurAnimal(){
+Animal constructeurAnimal(){ //ici on crée un animal
 	Animal a;
 	char* i;
 	printf(" Numéro d'identification ? ");
@@ -51,30 +51,35 @@ Animal constructeurAnimal(){
 		return a;
 	}
 }
-int main(){
-Animal x;
-int*fichier;
-char*tab;
+
+int main(){ 
+
+FILE* fichier=NULL;
+
 fichier=fopen("chenil.txt","r");
-for(int i=0; i<50; i++){
-x=constructeurAnimal();
+
+
 if(fichier==NULL){
     printf("Ouverture du fichier impossible");
     exit(1);
 }
-fgets(x.numid,199,fichier);
-fgets(x.nom,199,fichier);
-fgets(x.anneenaissance,199,fichier);
-fgets(x.espece,199,fichier);
-fgets(x.poids,199,fichier);
-fgets(x.commentaire,199,fichier);
-fscanf(fichier, %d, x.numid);
-fscanf(fichier, %d, x.nom);
-fscanf(fichier, %d, x.anneenaissance);
-fscanf(fichier, %d, x.espece);
-fscanf(fichier, %d, x.poids);
-fscanf(fichier, %d, x.commentaire);
+int nombre_animal;
+Animal a;
+a=constructeurAnimal();
+fscanf(fichier,"%d", &nombre_animal);
+Animal *tab=malloc(nombre_animal*sizeof(Animal));
+
+// on vérifie que le tableau n'est pas nul
+if(tab==NULL){
+	exit(2);
+	}
+
+for (int i=0; i<nombre_animal;i++){ // ici on récupère des animaux présents dans le chenil
+	fscanf(fichier,"%d %s %d %d %f %s", tab[i].numid, tab[i].nom, tab[i].anneenaissance, tab[i].espece, tab[i].poids, tab[i].commentaire);
 }
+
+free(tab);
+
 return 0;
 }
 
