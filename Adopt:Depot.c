@@ -1,11 +1,20 @@
 #include "chenil.h"
  
  //fonction pour adopter un animal//
- Animal adoptAnimal(Espece espece){
-    int nbAnimal;
-    printf
+ Animal adoptAnimal(?){
+    int nbAnimal, chxA;
+    printf("Vous voulez un chat, un chien, un hamster, ou même une autruche ?!?! \n ChenYl Tech est là pour vous !! \n);
+    printf("Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n ");
+    scanf("%d", &chxA);
+       if(chxA==0){
+          
+       }
+  
  }
  
+
+
+
  //fonction pour déposer un animal//
  Animal depotAnimal(int numid, char* nom, Espece espece, int anneenaissance, float poids, char* commentaire){
    int nbAdepot, nbAnimal, sûr?;
@@ -73,6 +82,7 @@
        }
        else if(choix==2){
           printf("Voyons voir... \n");
+          scanf(
           Action2 = depotAnimal()
        }
  return 0;
