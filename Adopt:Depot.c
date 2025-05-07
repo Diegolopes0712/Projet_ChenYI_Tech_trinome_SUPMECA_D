@@ -25,7 +25,7 @@
            }
            else{
              nbAdepot=(nbAnimal+nbAdepot)-50;
-             printf("Vous pouvez déposer %d animaux à cause du manque de place ! \n, nbAdepot);
+             printf("Vous pouvez déposer %d animaux à cause du manque de place ! \n, nbAdepot");
              printf("Voulez-vous quand même les déposer ? \n oui:1 ou non:2 \n");
              scanf("%d",&sür?);
                if(sür?==1){
@@ -38,7 +38,7 @@
                   return nbAnimal;
                } 
                else{
-                  printf("Veuillez saisir une valeur cohérente: 1 ou 2 \n);
+                  printf("Veuillez saisir une valeur cohérente: 1 ou 2 \n");
                   exit(1); 
            }
        }
