@@ -3,12 +3,34 @@
  //fonction pour adopter un animal//
  Animal adoptAnimal(?){
     int nbAnimal, chxA;
-    printf("Vous voulez un chat, un chien, un hamster, ou même une autruche ?!?! \n ChenYl Tech est là pour vous !! \n);
-    printf("Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n ");
+    printf("Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4, "stop" pour arrêter la demande \n ");
     scanf("%d", &chxA);
-       if(chxA==0){
-          
-       }
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles" \n);
+           exit(2);
+           break;
+       } 
   
  }
  
@@ -74,6 +96,7 @@
  
  int main(){
     int nbAnimal, choix, Action1, Action2;
+    printf("Vous voulez un chat, un chien, un hamster, ou même une autruche ?!?! \n ChenYl Tech est là pour vous !! \n);
     printf("Quelle action voulez vous effectuer ? \n 1:Adopter ou 2:déposer ? \n");
     scanf("%d",&choix);
        if(choix==1){
