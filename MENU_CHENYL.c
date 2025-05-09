@@ -24,7 +24,7 @@ int main(){
            
            printf("Votre choix: %d \n\n" , nb);
            
-            printf("==========Accès=publique========== \n\n");
+            printf("========= Accès=publique ========= \n\n");
             printf("1) Voir nos pensionnaires. \n");
             printf("2) Adopter ou déposer un animal.  \n");
             printf("3) Précédent.  \n\n");
@@ -67,7 +67,7 @@ int main(){
               scanf("%d", &code);
                  if(code==1234){
                      
-                    printf("========Accès=au=personnel======== \n\n");
+                    printf("======= Accès=au=personnel ======= \n\n");
                     printf("1) Voir les pensionnaires. \n");
                     printf("2) Alimentation.  \n");
                     printf("3) Modifier un animal.  \n");
