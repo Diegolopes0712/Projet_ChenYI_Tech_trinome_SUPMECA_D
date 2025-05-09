@@ -6,7 +6,7 @@
 
 
 int main(){
-    int nb, rep ;
+    int nb, rep, nbPu, nbPl, code;
     
     printf("Bienvenue dans CHENYL TECH !! \n\n");
     printf("============== MENU ============== \n\n");
@@ -21,12 +21,97 @@ int main(){
    
     switch(nb){
         case(1):
-           printf("Votre choix: %d \n" , nb);
-           return 0;
-           break;
+           
+           printf("Votre choix: %d \n\n" , nb);
+           
+            printf("==========Accès=publique========== \n\n");
+            printf("1) Voir nos pensionnaires. \n");
+            printf("2) Adopter ou déposer un animal.  \n");
+            printf("3) Précédent.  \n\n");
+            printf("================================== \n\n");
+            printf("Entrez une action: \n");
+               scanf("%d",&nbPu);
+    
+            while(nbPu != 1 || nbPu != 2 || nbPu != 3){
+   
+            switch(nbPu){
+               case(1):
+                  printf("Votre action: %d \n" , nbPu);
+                  return 0;
+                  break;
+        
+               case(2):
+                  printf("Votre action: %d \n" , nbPu);
+                  return 0;
+                  break;
+        
+               case(3):
+                  printf("Votre action: %d \n" , nbPu);
+                  return 0;
+                  break;
+        
+               default:
+                  printf("Aucun cas ne correspond !\n Recommencez ! \n" );
+                  scanf("%d", &nbPu);
+                  break;
+            }
+            }
+           
+        return 0;
+        break;
+        
         
         case(2):
            printf("Votre choix: %d \n" , nb);
+           printf("Entrez le code secret pour accéder à ce menu ! \n");
+              scanf("%d", &code);
+                 if(code==1234){
+                     
+                    printf("========Accès=au=personnel======== \n\n");
+                    printf("1) Voir les pensionnaires. \n");
+                    printf("2) Alimentation.  \n");
+                    printf("3) Modifier un animal.  \n");
+                    printf("4) Précédent.  \n\n");
+                    printf("================================== \n\n");
+                    printf("Entrez une action: \n");
+                       scanf("%d",&nbPl);
+    
+                    while(nbPl != 1 || nbPl != 2 || nbPl != 3 || nbPl != 4){
+   
+                    switch(nbPl){
+                       case(1):
+                          printf("Votre action: %d \n" , nbPl);
+                          return 0;
+                          break;
+        
+                       case(2):
+                          printf("Votre action: %d \n" , nbPl);
+                          return 0;
+                          break;
+        
+                       case(3):
+                          printf("Votre action: %d \n" , nbPl);
+                          return 0;
+                          break;
+                
+                       case(4):
+                          printf("Votre action: %d \n" , nbPl);
+                          return 0;
+                          break;  
+        
+                       default:
+                          printf("Aucun cas ne correspond !\n Recommencez ! \n" );
+                          scanf("%d", &nbPl);
+                          break;
+                    }
+                    }
+            
+                 }
+                 else{
+                     printf("Oups, ce n'est pas le bon code !! \n Vous n'avez pas accès à cette page ! \n");
+                     exit(0);
+                 }
+                 
            return 0;
            break;
         
