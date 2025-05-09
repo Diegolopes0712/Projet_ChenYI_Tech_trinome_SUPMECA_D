@@ -7,6 +7,16 @@
 
 int main(){
     int nb, rep, nbPu, nbPl, code;
+
+printf("    _____ _                      _   _            _  \n ");    
+printf("  / ____| |                    | | | |          | | \n ");   
+printf(" | |    | |__   ___ _ __  _   _| | | |_ ___  ___| |__ \n ");  
+printf(" | |    | '_  |/ _ | '_  | | | | | | __/ _ |/ __| '_  | \n "); 
+printf(" | |____| | | |  __/ | | | |_| | | | ||  __/ (__| | | | \n ");
+printf(" | _____|_| |_| ___|_| |_| __, |_| | __ ___| ___|_| |_| \n ");
+printf("                           __/ |                        \n ");
+printf("                          |___/                         \n\n ");
+
     
     printf("Bienvenue dans CHENYL TECH !! \n\n");
     printf("============== MENU ============== \n\n");
