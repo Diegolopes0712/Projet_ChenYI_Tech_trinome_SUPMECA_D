@@ -1,0 +1,20 @@
+Rapport projet ChenYl-Tech
+
+Organisation :
+Nous avons décidé de travailler sur ChenYl Tech. Nous avons partagé des tâches pour avancer sur notre projet le plus rapidement possible. Nous avons également avancé notre projet pendant les vacances pour le terminer.
+
+Choix importants :
+Nous avons choisi le tri fusion car il s’agit de l’un des tris les plus rapides dont sa fonction est robuste et stable.
+Nous avons séparé les points c et les points h pour faire notre projet en plusieurs codes afin de faciliter le travail.
+Nous avons également créé des tableaux pour chaque espèce et pour chaque animal pour classer les animaux en fonction de leurs caractéristiques (âge, espèce, nom).
+Nous avons également utilisé des boucles pour les conditions dans presque tous les codes .c pour demander à l’utilisateur de saisir les caractéristiques de l’animal, d’adopter et d’accueillir l’animal dans le chenil.
+Nous avons utilisé des numéros pour chaque espèce (chien = 0, chat = 1, hamster = 2, autruche = 3) pour les identifier plus facilement.
+
+Limite :
+Nous avons rencontré des difficultés lors du projet ChenYl Tech.
+Nous avons rencontré des difficultés sur la structure. En effet, comme nos parties de codes sont dépendantes de la partie sur la structure, on ne pouvait pas savoir si nos parties de code fonctionnent, ce qui nous fait ralentir le projet. La prof d’informatique nous a aidés à finir la partie sur la structure. 
+Nous avons également rencontré des difficultés sur la partie où on doit trier des animaux par espèce. En effet, le choix du tri n’est pas facile et le tri fusion n’est pas évident à coder. Nous avons fait des recherches sur Internet pour faire le tri fusion sur un de nos codes en C.
+
+Bonus : 
+Nous avons créé le menu principal pour l’interface du jeu afin de rendre notre projet plus animé.
+
