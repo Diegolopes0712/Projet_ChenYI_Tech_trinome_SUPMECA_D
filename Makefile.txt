@@ -3,7 +3,7 @@ chenil.o : structurechenil.c chenil.h
 adopt.o : Adopt:Depot.c chenil.c
 ordre.o : ordredecroissant.c chenil.c
 chercheanimal.o : chercheanimal.c chenil.c
-menu.o : Menu_chenyl.c chenil.c
+menu.o : MENU_CHENYL.c.c chenil.c
 exec : menu.o chenil.o adopt.o ordre.o chercheanimal.o dayfood.o
 
 gcc menu.o chenil.o adopt.o ordre.o chercheanimal.o dayfood.o -o exec
