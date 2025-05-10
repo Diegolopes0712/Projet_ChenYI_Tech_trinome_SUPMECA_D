@@ -2,7 +2,10 @@
 
 
 typedef enum{ //liste des espèces présentes dans le chenil
- chien=0, chat=1, hamster=2, autruche=3
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
 }Espece;
 
 typedef struct{ //Caractéristique d'un animal
@@ -20,6 +23,8 @@ typedef struct{ //Caractéristique d'un animal
 Animal constructeurAnimal(){ //ici on crée un animal
 	Animal a;
 	char* i;
+	int nbE;
+	a.espece=nbE;
 	printf(" Numéro d'identification ? ");
 	scanf("%d", &a.numid);
 	printf(" Quel est son nom ? ");
@@ -27,7 +32,7 @@ Animal constructeurAnimal(){ //ici on crée un animal
 	printf(" En quelle année est-t-il né ? ");
 	scanf("%d", &a.anneenaissance);
 	printf(" Quelle est son Espèce ? ");
-	scanf("%d", &a.espece);
+	scanf("%d", &nbE);
 	printf(" Quel est son poids ? ");
 	scanf("%f", &a.poids);
 	printf(" Un commentaire ? oui ou non ");
@@ -53,35 +58,34 @@ Animal constructeurAnimal(){ //ici on crée un animal
 }
 
 int main(){ 
+    
+   int nombre_animal, tabEspece;
+   Animal a;    
 
-FILE* fichier=NULL;
+   FILE* fichier=NULL;
+   fichier=fopen("chenil.txt","r+");
 
-fichier=fopen("chenil.txt","r+");
+      if(fichier==NULL){
+         printf("Ouverture du fichier impossible");
+         exit(1);
+      }
 
+   
+   a=constructeurAnimal();
+      
+      fscanf(fichier,"%d", &nombre_animal);
+      Animal *tab=malloc(nombre_animal*sizeof(Animal));
 
-if(fichier==NULL){
-    printf("Ouverture du fichier impossible");
-    exit(1);
-}
-int nombre_animal;
-Animal a;
-a=constructeurAnimal();
-fscanf(fichier,"%d", &nombre_animal);
-Animal *tab=malloc(nombre_animal*sizeof(Animal));
-
-// on vérifie que le tableau n'est pas nul
-if(tab==NULL){
-	exit(2);
-	}
+     
+      if(tab==NULL){   // on vérifie que le tableau n'est pas nul
+         exit(2);
+      }
 	
-for (int i=0; i<nombre_animal;i++){ // ici on récupère des animaux présents dans le chenil
-	fscanf(fichier,"%d %s %d %d %f %s\n", &tab[i].numid, tab[i].nom, &tab[i].anneenaissance, &tab[i].espece, &tab[i].poids, tab[i].commentaire);
-}
+      for(int i=0; i<nombre_animal;i++){   // ici on récupère des animaux présents dans le chenil
+	     fscanf(fichier,"%d %s %d %d %f %s\n", &tab[i].numid, tab[i].nom, &tab[i].anneenaissance, &tabEspece, &tab[i].poids, tab[i].commentaire);
+      }
 
-free(tab);
+   free(tab);
 
 return 0;
 }
-
-
-
