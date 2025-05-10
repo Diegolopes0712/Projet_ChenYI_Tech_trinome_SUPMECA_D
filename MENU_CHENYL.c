@@ -1,12 +1,23 @@
-//MENU CHENYL !!!//
-#include<stdio.h>
-#include<stdlib.h>
+#include"chenil.h"
+
+int liste(int listA){
+    
+    FILE* F = NULL;
+     // ouverture du fichier chenil-1.txt en lecture seule
+    F = fopen("chenil-1.txt", "r");
+    if (F == NULL){
+    printf("Ouverture du fichier impossible");
+    // exit(1);
+    }
+    fclose(F);
+
+}
 
 
 
 
 int main(){
-    int nb, rep, nbPu, nbPl, code;
+    int nb, rep, nbPu, nbPl, code, A;
 
 printf("    _____ _                      _   _            _  \n ");    
 printf("  / ____| |                    | | | |          | | \n ");   
@@ -47,11 +58,14 @@ printf("                          |___/                         \n\n ");
             switch(nbPu){
                case(1):
                   printf("Votre action: %d \n" , nbPu);
+                    int listA;
+                    A=liste(listA);  
                   return 0;
                   break;
         
                case(2):
                   printf("Votre action: %d \n" , nbPu);
+                  
                   return 0;
                   break;
         
