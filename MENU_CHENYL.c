@@ -3,8 +3,8 @@
 int liste(int listA){
     
     FILE* F = NULL;
-     // ouverture du fichier chenil-1.txt en lecture seule
-    F = fopen("chenil-1.txt", "r");
+     // ouverture du fichier chenil.txt en lecture seule
+    F = fopen("chenil.txt", "r");
     if (F == NULL){
     printf("Ouverture du fichier impossible");
     // exit(1);
