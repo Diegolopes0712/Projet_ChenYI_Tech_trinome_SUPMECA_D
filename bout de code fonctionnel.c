@@ -116,7 +116,7 @@ typedef struct{ //Caractéristiques d'un animal
 	  scanf("%s", a.nom);
 	printf(" En quelle année est-t-il né ? \n ");
 	  scanf("%d", &a.anneenaissance);
-	    while(a.anneenaissance<=2000 || a.anneenaissance>=2025);{ //ici on est en 2025
+	    while(a.anneenaissance<=2000 || a.anneenaissance>=2025){ //ici on est en 2025
 	       printf(" Veuillez saisir une année de naissance cohérente ! \n");
 	         scanf("%d", &a.anneenaissance);
 	    }
