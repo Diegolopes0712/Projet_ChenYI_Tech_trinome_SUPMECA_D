@@ -143,15 +143,61 @@ typedef struct{ //Caractéristique d'un animal
 
 
 
+float day_food(Animal* tab, int taille){
+    float qtn=0;
+    for(int i=0;i<taille;i++){
+       if(tab[i].nom=="autruche"){
+         qtn+=2.5;
+       }
+       else if(tab[i].nom=="hamster"){
+              qtn+=0.02;
+       }
+       else{
+           if((2025-tab[i].anneenaissance)<2){
+             qtn+=0.5;
+           }
+           else{
+               qtn+=(10/100)*tab[i].poids;
+           }
+       }
+    }
+}
+
+
+
+
+int liste(int listA){
+    
+    FILE* F = NULL;
+     // ouverture du fichier chenil.txt en lecture seule
+    F = fopen("chenil-1.txt", "r");
+    if (F == NULL){
+       printf("Ouverture du fichier impossible");
+    }
+    else{
+       char ligne[100];
+       while(fgets(ligne, 100, F)!= NULL){
+           printf("%s", ligne);
+       }
+    fclose(F);
+    }
+
+}
+
+
 
 int main(){
-    int nb, rep, nbPu, nbPl, code;
+    int nb, rep, nbPu, nbPl, code, A;
     int nbAnimal, choix, C, numid, anneenaissance;
     float poids;
     Espece espece;
     char commentaire, nom;
     Animal  Action1, Action2;
-
+    int taille=50;
+    float df;
+    Animal tab[taille];
+    df = day_food(tab,taille);
+    
 printf("    _____ _                      _   _            _  \n ");    
 printf("  / ____| |                    | | | |          | | \n ");   
 printf(" | |    | |__   ___ _ __  _   _| | | |_ ___  ___| |__ \n ");  
@@ -192,6 +238,8 @@ printf("                          |___/                         \n\n ");
                case(1):
                   printf("Votre action: %d \n\n" , nbPu);
                   printf("================================== \n\n");
+                    int listA;
+                    A=liste(listA);  
                   return 0;
                   break;
         
@@ -253,6 +301,7 @@ printf("                          |___/                         \n\n ");
         
                        case(2):
                           printf("Votre action: %d \n" , nbPl);
+                           printf(" La quantité de nourriture par jour est : %f ", df);
                           return 0;
                           break;
         
