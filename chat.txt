@@ -1,2 +1,2 @@
-097872; Felix; 2016; chat; 14,7; "aime les croquettes Felix"
+097872; Felix; 2016; chat; 4,7; "aime les croquettes Felix"
 576314; Upsi; 2007; chat; 5,0; 
