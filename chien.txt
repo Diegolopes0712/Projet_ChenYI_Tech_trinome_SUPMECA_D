@@ -1,3 +1,4 @@
 176544; Medor; 2010; chien; 23,5; "chien très joueur";
 245619; Pookie; 2019; chien, 10,4; 
-097872; Felix; 2016; chien; 14,7;
+576211; Choupette; 2024; chien; 5,0; "chienne très dynamique";
+003452; Beethoven; 2018; chien; 13,2; "adore les romans policiers"
