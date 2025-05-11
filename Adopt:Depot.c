@@ -3,7 +3,7 @@
  //fonction pour adopter un animal//
  Animal adoptAnimal(int chxA){
     int nbAnimal;
-    printf("Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande \n ");
+    printf("Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n ");
     scanf("%d", &chxA);
        switch(chxA){
         case 0:
@@ -38,12 +38,12 @@
 
 
  //fonction pour déposer un animal//
- Animal depotAnimal(int numid, char* nom, Espece espece, int anneenaissance, float poids, char* commentaire){
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
    int nbAdepot, nbAnimal, sûr;
    printf("Combien d'animaux voulez-vous déposer ? \n");
    scanf("%d",&nbAdepot);
        
-       if(nbAdepot=1 && nbAnimal+nbAdepot<=50){  //Pour déposer 1 animal//
+       if(nbAdepot==1 && nbAnimal+nbAdepot<=50){  //Pour déposer 1 animal//
        printf("Votre animal a bien été déposé. \n");
        nbAnimal+=nbAdepot;
         printf("Il y a %d animaux dans le refuge. \n", nbAnimal);
@@ -92,23 +92,26 @@
        } */
  
       }
- 
+    }
  
  int main(){
-    int nbAnimal, choix, Action1, Action2;
-    printf("Vous voulez un chat, un chien, un hamster, ou même une autruche ?!?! \n ChenYl Tech est là pour vous !! \n");
-    printf("Quelle action voulez vous effectuer ? \n 1:Adopter ou 2:déposer ? \n");
+    int nbAnimal, choix, C, numid, anneenaissance;
+    float poids;
+    Espece espece;
+    char commentaire, nom;
+    Animal  Action1, Action2;
+    printf("Vous voulez un chat, un chien, un hamster, ou même une autruche ?!?! \n ChenYl Tech est là pour vous !! \n====================================================================\n");
+    printf("Quelle action voulez vous effectuer ? \n\n 1:Adopter ou 2:déposer ? \n");
     scanf("%d",&choix);
        if(choix==1){
           printf("Quelle belle action ! \n Quel animal voulez vous adopter ? \n");
-          Action1 = adoptAnimal();
+          Action1 = adoptAnimal(C);
        }
        else if(choix==2){
           printf("Voyons voir... \n");
-          Action2 = depotAnimal();
+          Action2 = depotAnimal(numid,nom,espece,anneenaissance,poids,commentaire);
        }
  return 0;
  }
- 
  
  
