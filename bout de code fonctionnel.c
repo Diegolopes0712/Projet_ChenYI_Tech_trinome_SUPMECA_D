@@ -10,7 +10,7 @@ typedef enum{ //liste des espèces présentes dans le chenil
     autruche=3
 }Espece;
 
-typedef struct{ //Caractéristique d'un animal
+typedef struct{ //Caractéristiques d'un animal
 
 	int numid;
 	char nom[100];
@@ -116,7 +116,7 @@ typedef struct{ //Caractéristique d'un animal
 	  scanf("%s", a.nom);
 	printf(" En quelle année est-t-il né ? \n ");
 	  scanf("%d", &a.anneenaissance);
-	    while(a.anneenaissance<=2000 || a.anneenaissance>=2025);{
+	    while(a.anneenaissance<=2000 || a.anneenaissance>=2025);{ //ici on est en 2025
 	       printf(" Veuillez saisir une année de naissance cohérente ! \n");
 	         scanf("%d", &a.anneenaissance);
 	    }
@@ -244,7 +244,7 @@ void modifier_animal(Animal a){
      else if(choix==5){
        printf(" Quel est son nouveau poids ? \n ");
        scanf("%f", &poids);
-       if(poids>0.0){
+       if(poids>0.0 && poids<200.0){
          a.poids=poids;
        }
        else{
