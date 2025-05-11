@@ -116,7 +116,7 @@ typedef struct{ //Caractéristique d'un animal
 	  scanf("%s", a.nom);
 	printf(" En quelle année est-t-il né ? \n ");
 	  scanf("%d", &a.anneenaissance);
-	    while(a.anneenaissance<=2005 || a.anneenaissance>=2025);{
+	    while(a.anneenaissance<=2000 || a.anneenaissance>=2025);{
 	       printf(" Veuillez saisir une année de naissance cohérente ! \n");
 	         scanf("%d", &a.anneenaissance);
 	    }
@@ -182,7 +182,7 @@ int liste(int listA){
     
     FILE* F = NULL;
      // ouverture du fichier chenil.txt en lecture seule
-    F = fopen("chenil-1.txt", "r");
+    F = fopen("chenil.txt", "r");
     if (F == NULL){
        printf("Ouverture du fichier impossible");
     }
