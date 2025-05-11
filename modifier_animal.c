@@ -2,9 +2,7 @@
 
 void modifier_animal(Animal a){
      int choix,numid,anneenaissance,espece;
-     char nom[100];
      float poids;
-     char commentaire[1000];
      printf(" Que voulez-vous modifier sur l'animal ? \n Tapez 1 pour modifier le numéro d'identification \n Tapez 2 pour modifier le nom \n Tapez 3 pour modifier l'année de naissance \n Tapez 4 pour modifier l'espèce \n Tapez 5 pour modifier le poids \n Tapez 6 pour modifier le commentaire \n ");
      scanf("%d", &choix);
      if(choix==1){
@@ -20,8 +18,7 @@ void modifier_animal(Animal a){
      }
      else if(choix==2){
        printf(" Quel est son nouveau nom ? \n ");
-       scanf("%s", nom);
-       a.nom=nom;
+       scanf("%s", a.nom);
      }
      else if(choix==3){
        printf(" Quel est sa nouvelle année de naissance ? \n ");
@@ -58,8 +55,7 @@ void modifier_animal(Animal a){
      }
      else if(choix==6){
        printf(" Quel est son nouveau commentaire ? \n ");
-       scanf("%s", commentaire);
-       a.commentaire=commentaire;
+       scanf("%s", a.commentaire); 
      }
      else{
          printf(" Veuillez saisir un nombre entier situé entre 1 et 6 inclus ! \n ");
