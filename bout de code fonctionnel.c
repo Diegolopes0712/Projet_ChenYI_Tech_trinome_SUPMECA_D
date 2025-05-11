@@ -106,9 +106,10 @@ typedef struct{ //Caractéristiques d'un animal
     
     Animal constructeurAnimal(){ //ici on crée un animal
 	Animal a;
-	char i, oui, non;
-	int nbE;
+	char Com[1000];
+	int nbE, rep, chien, chat, hamster, autruche;
 	a.espece=nbE;
+    a.commentaire[1000]=Com[1000];
 
 	printf(" Numéro d'identification ? (6 chiffres) \n ");
 	  scanf("%d", &a.numid);
@@ -123,35 +124,42 @@ typedef struct{ //Caractéristiques d'un animal
 	    
 	printf(" Quelle est son Espèce ? 0/chien 1/chat 2/hamster 3/autruche \n");
 	  scanf("%d", &nbE);
+	  if(nbE==0){
+	      nbE=chien;
+	  }
+	  else if(nbE==1){
+	      nbE=chat;
+	  }
+	  else if(nbE==2){
+	      nbE=hamster;
+	  }
+	  else{
+	      nbE=autruche;
+	  }
 	  
-	printf(" Quel est son poids ? ");
+	printf(" Quel est son poids ? \n");
 	  scanf("%f", &a.poids);
-	    while(a.poids<=0.0 || a.poids>=200.0);{
+	    while(a.poids<=0.0 || a.poids>=200.0){
 	       printf("Veuillez saisir un poids cohérent ! \n");
 	         scanf("%f", &a.poids);
 	    }
 	    
-	printf(" Un commentaire ? oui/0 ou non/1 ");
-	  scanf("%s", &i);
-	if(i==oui){
-	   printf(" Quel commentaire ? ");
-	     scanf("%s", a.commentaire);
-	}
-	else if(i!=oui && i!=non){
-	        printf(" Veuillez répondre par oui ou par non s'il vous plait ! ");
-		      scanf("%s", &i);
-		if(i==oui){
-	           printf(" Quel commentaire ? ");
-	             scanf("%s", a.commentaire);
-	        }
+	printf(" Un commentaire ? oui/0 ou non/1 \n");
+	  scanf("%d", &rep);
+	  while(rep!=0 && rep!=1){
+	      printf(" Veuillez répondre par oui ou par non s'il vous plait ! \n");
+		      scanf("%d", &rep);
+	  }
+	  
+	  if(rep==0){
+	       printf(" Quel commentaire ? \n");
+	       scanf("%s", &Com[1000]);
+	    }
 		else{
-			return a;
+			printf("\nL'animal enregistré est: \n\n %d\n %s\n %d\n %d\n %f\n  ", a.numid, a.nom, a.anneenaissance, nbE, a.poids); 
 		}
-	}
-	else{
-		return a;
-	}
-}
+	printf("\nL'animal enregistré est: \n\n %d\n %s\n %d\n %d\n %f\n %s\n ", a.numid, a.nom, a.anneenaissance, nbE, a.poids, &Com[1000]); 
+    }
 
 
 
@@ -222,7 +230,7 @@ void modifier_animal(Animal a){
      else if(choix==3){
        printf(" Quel est sa nouvelle année de naissance ? \n ");
        scanf("%d", &anneenaissance);
-       if(anneenaissance>2000 && anneenaissance<2025){
+       if(anneenaissance>=2000){
          a.anneenaissance=anneenaissance;
        }
        else{
@@ -264,11 +272,11 @@ void modifier_animal(Animal a){
 
 
 int main(){
-    int nb, rep, nbPu, nbPl, code, A;
-    int nbAnimal, choix, C, numid, anneenaissance;
+    int nb, rep, repC2c3, nbPu, nbPl, code, A;
+    int nbAnimal, choix, C, numid, anneenaissance, nbE;
     float poids;
     Espece espece;
-    char commentaire, nom;
+    char commentaire, nom, Com[1000];
     Animal  Action1, Action2, a;
     int taille=50;
     float df;
@@ -384,10 +392,14 @@ printf("                          |___/                         \n\n ");
         
                        case(3):
                           printf("Votre action: %d \n" , nbPl);
-                             constructeurAnimal(a);
-                                printf(" %d \n %s \n %d \n %d \n %f \n %s \n ",a.numid,a.nom,a.anneenaissance,a.espece,a.poids,a.commentaire);
-                             modifier_animal(a);
-                                printf(" %d \n %s \n %d \n %d \n %f \n %s \n ",a.numid,a.nom,a.anneenaissance,a.espece,a.poids,a.commentaire);
+                             printf("Voulez vous entrer un nouvel animal ou modifier un animal ? 0/pour entrer ou 1/pour modifier \n");
+                             scanf("%d", &repC2c3);
+                                if(repC2c3==0){
+                                    constructeurAnimal(a);
+                                }
+                                else{
+                                    modifier_animal(a);
+                                }
                           return 0;
                           break;
                 
