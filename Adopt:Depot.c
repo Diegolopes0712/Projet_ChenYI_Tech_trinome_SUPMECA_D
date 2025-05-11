@@ -1,8 +1,8 @@
 #include "chenil.h"
  
  //fonction pour adopter un animal//
- Animal adoptAnimal(?){
-    int nbAnimal, chxA;
+ Animal adoptAnimal(Espece chxa){
+    int nbAnimal;
     printf("Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4, "stop" pour arrêter la demande \n ");
     scanf("%d", &chxA);
        switch(chxA){
