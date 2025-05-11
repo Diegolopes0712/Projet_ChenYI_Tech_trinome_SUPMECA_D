@@ -1,7 +1,7 @@
 #include "chenil.h"
  
  //fonction pour adopter un animal//
- Animal adoptAnimal(int chxa){
+ Animal adoptAnimal(int chxA){
     int nbAnimal;
     printf("Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4, "stop" pour arrêter la demande \n ");
     scanf("%d", &chxA);
@@ -58,13 +58,13 @@
              nbAdepot=(nbAnimal+nbAdepot)-50;
              printf("Vous pouvez déposer %d animaux à cause du manque de place ! \n, nbAdepot");
              printf("Voulez-vous quand même les déposer ? \n oui:1 ou non:2 \n");
-             scanf("%d",&sür?);
-               if(sür?==1){
+             scanf("%d",&sûr?);
+               if(sûr?==1){
                   printf("Vos animaux ont bien été déposés ! \n");
                   nbAnimal=50;
                   return nbAnimal;
                }
-               else if(sur?==2){
+               else if(sûr?==2){
                   printf("Vos animaux rentrent avec vous aujourd'hui ! \n");
                   return nbAnimal;
                } 
@@ -101,12 +101,11 @@
     scanf("%d",&choix);
        if(choix==1){
           printf("Quelle belle action ! \n Quel animal voulez vous adopter ? \n");
-          Action1 = adoptAnimal()
+          Action1 = adoptAnimal();
        }
        else if(choix==2){
           printf("Voyons voir... \n");
-          scanf(
-          Action2 = depotAnimal()
+          Action2 = depotAnimal();
        }
  return 0;
  }
