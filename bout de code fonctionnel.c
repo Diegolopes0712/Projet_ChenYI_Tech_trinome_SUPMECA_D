@@ -222,7 +222,7 @@ void modifier_animal(Animal a){
      else if(choix==3){
        printf(" Quel est sa nouvelle année de naissance ? \n ");
        scanf("%d", &anneenaissance);
-       if(anneenaissance>=2000){
+       if(anneenaissance>2000 && anneenaissance<2025){
          a.anneenaissance=anneenaissance;
        }
        else{
