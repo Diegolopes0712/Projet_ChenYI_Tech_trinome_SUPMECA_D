@@ -24,7 +24,7 @@ typedef struct{ //Caractéristiques d'un animal
 
 //fonction pour adopter un animal//
  Animal adoptAnimal(int chxA){
-    int nbAnimal;
+    int nbAnimal=25;
     printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
     scanf("%d", &chxA);
        switch(chxA){
@@ -61,7 +61,7 @@ typedef struct{ //Caractéristiques d'un animal
 
  //fonction pour déposer un animal//
  Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
-   int nbAdepot, nbAnimal, sûr;
+   int nbAdepot, nbAnimal=25, sûr;
    printf("Combien d'animaux voulez-vous déposer ? \n");
    scanf("%d",&nbAdepot);
        
