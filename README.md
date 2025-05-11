@@ -9,5 +9,5 @@ Méthode Windows:
  
 Méthode Linux:
  -Tout d'abord, veuillez télécharger les fichiers suivants et les placer dans un dossier que vous pouvez nommer CHENYL_TECH.
- -Ensuite, ouvrez un terminal avec la commande "Alt-F2" (commande Linux) et mettez l'instruction "gnôme-terminal" dans la zone d'écriture étudiée à cet effet.
+ -Ensuite, ouvrez un terminal avec la commande "Alt-F2" (commande Linux) et mettez l'instruction "gnome-terminal" dans la zone d'écriture étudiée à cet effet.
  -Une fois le terminal ouvert, vous devez parcourir vôtre PC (tel un hacker) à la recherche du dossier CHENYL_TECH ! Pour cela, inscrivez: " cd CHENYL_TECH " dans vôtre terminal.   
