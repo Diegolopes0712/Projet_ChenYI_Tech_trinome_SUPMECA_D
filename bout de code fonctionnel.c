@@ -77,7 +77,7 @@ typedef struct{ //Caractéristiques d'un animal
              printf("Il y a %d animaux dans le refuge. \n", nbAnimal);
            }
            else{
-             nbAdepot=(nbAnimal+nbAdepot)-50;
+             nbAdepot=50-nbAnimal;
              printf("Vous pouvez déposer %d animaux à cause du manque de place ! \n", nbAdepot);
              printf("Voulez-vous quand même les déposer ? \n oui:1 ou non:2 \n");
              scanf("%d",&sûr);
