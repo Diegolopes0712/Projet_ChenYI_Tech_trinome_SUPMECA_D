@@ -1,5 +1,4 @@
 #include"chenil.h"
-//#include"fonctions.c"
 
 
 
@@ -107,8 +106,9 @@ typedef struct{ //Caractéristiques d'un animal
 	Animal a;
 	char Com[1000];
 	int nbE, rep;
+	a.espece=nbE;
     a.commentaire[1000]=Com[1000];
-    char animal[10];
+    char animal[10], chien, chat, hamster, autruche;
 	printf(" Numéro d'identification ? (6 chiffres) \n ");
 	  scanf("%d", &a.numid);
 	printf(" Quel est son nom ? \n");
@@ -134,7 +134,7 @@ typedef struct{ //Caractéristiques d'un animal
 	  else{
 	      animal[10]=autruche;
 	  }
-	  printf(" %s ", &animal[10]);
+
 	printf(" Quel est son poids ? \n");
 	  scanf("%f", &a.poids);
 	    while(a.poids<=0.0 || a.poids>=200.0){
@@ -152,17 +152,17 @@ typedef struct{ //Caractéristiques d'un animal
 	  if(rep==0){
 	       printf(" Quel commentaire ? \n");
 	       scanf("%s", &Com[1000]);
-	       printf("\nL'animal enregistré est: \n\n %d\n %s\n %d\n %s\n %f\n %s\n ", a.numid, a.nom, a.anneenaissance, &animal[10], a.poids, &Com[1000]);
+	       printf("\nL'animal enregistré est: \n\n %d\n %s\n %d\n %d\n %f Kg\n %s\n ", a.numid, a.nom, a.anneenaissance, animal[10], a.poids, &Com[1000]);
 	    }
 		else{
-			printf("\nL'animal enregistré est: \n\n %d\n %s\n %d\n %s\n %f\n  ", a.numid, a.nom, a.anneenaissance, &animal[10], a.poids); 
+			printf("\nL'animal enregistré est: \n\n %d\n %s\n %d\n %d\n %f Kg\n  ", a.numid, a.nom, a.anneenaissance, animal[10], a.poids); 
 		}
  
     }
 
 
 
-float day_food(Animal* tab, int taille){
+float day_food(Animal* tab, int taille){ //fonction pour indiquer la nourriture utile en fonction du nombre d'animaux
     float qtn=0;
     for(int i=0;i<taille;i++){
        if(tab[i].nom=="autruche"){
@@ -185,7 +185,7 @@ float day_food(Animal* tab, int taille){
 
 
 
-int liste(int listA){
+int liste(int listA){ //fonction pour afficher les pensionnaires du chenil
     
     FILE* F = NULL;
      // ouverture du fichier chenil.txt en lecture seule
@@ -206,7 +206,7 @@ int liste(int listA){
 
 
 
-void modifier_animal(Animal a){
+void modifier_animal(Animal a){ //fonction pour modifier un animal
      int choix,numid,anneenaissance,espece;
      float poids;
      printf(" Que voulez-vous modifier sur l'animal ? \n Tapez 1 pour modifier le numéro d'identification \n Tapez 2 pour modifier le nom \n Tapez 3 pour modifier l'année de naissance \n Tapez 4 pour modifier l'espèce \n Tapez 5 pour modifier le poids \n Tapez 6 pour modifier le commentaire \n ");
