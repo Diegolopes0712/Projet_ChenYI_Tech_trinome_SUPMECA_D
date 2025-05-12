@@ -29,15 +29,7 @@ typedef struct{ //Caractéristiques d'un animal
     scanf("%d", &chxA);
        switch(chxA){
         case 0: 
- 
-close ad [x]
-
-    input
-    stderr
-
-Compilation failed due to following error(s). 
            printf("Vous avez choisi l'animal: chien \n");
-              
            nbAnimal--;
            break;
         case 1:
