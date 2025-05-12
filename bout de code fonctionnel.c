@@ -28,7 +28,14 @@ typedef struct{ //Caractéristiques d'un animal
     printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
     scanf("%d", &chxA);
        switch(chxA){
-        case 0:
+        case 0: 
+ 
+close ad [x]
+
+    input
+    stderr
+
+Compilation failed due to following error(s). 
            printf("Vous avez choisi l'animal: chien \n");
               
            nbAnimal--;
@@ -90,7 +97,263 @@ typedef struct{ //Caractéristiques d'un animal
                   printf("Vos animaux rentrent avec vous aujourd'hui ! \n");
                   printf("Il y a %d animaux dans le refuge. \n", nbAnimal);
                } 
-               else{
+               else{#include"chenil.h"
+//#include"fonctions.c"
+
+
+
+typedef enum{ //liste des espèces présentes dans le chenil
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
+}Espece;
+
+typedef struct{ //Caractéristiques d'un animal
+
+	int numid;
+	char nom[100];
+	int anneenaissance;
+	Espece espece;
+	float poids;#include"chenil.h"
+//#include"fonctions.c"
+
+
+
+typedef enum{ //liste des espèces présentes dans le chenil
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
+}Espece;
+
+typedef struct{ //Caractéristiques d'un animal
+
+	int numid;
+	char nom[100];
+	int anneenaissance;
+	Espece espece;
+	float poids;
+	char commentaire[1000];
+
+}Animal;
+
+
+//fonction pour adopter un animal//
+ Animal adoptAnimal(int chxA){
+    int nbAnimal=25;
+    printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
+    scanf("%d", &chxA);
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;#include"chenil.h"
+//#include"fonctions.c"
+
+
+
+typedef enum{ //liste des espèces présentes dans le chenil
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
+}Espece;
+
+typedef struct{ //Caractéristiques d'un animal
+
+	int numid;
+	char nom[100];
+	int anneenaissance;
+	Espece espece;
+	float poids;
+	char commentaire[1000];
+
+}Animal;#include"chenil.h"
+//#include"fonctions.c"
+
+
+
+typedef enum{ //liste des espèces présentes dans le chenil
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
+}Espece;
+
+typedef struct{ //Caractéristiques d'un animal
+
+	int numid;
+	char nom[100];
+	int anneenaissance;
+	Espece espece;
+	float poids;
+	char commentaire[1000];
+
+}Animal;
+
+
+//fonction pour adopter un animal//
+ Animal adoptAnimal(int chxA){
+    int nbAnimal=25;
+    printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
+    scanf("%d", &chxA);
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles \n");
+           exit(2);
+           break;
+       } 
+  
+ }
+ 
+
+
+
+ //fonction pour déposer un animal//
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
+   int nbAdepot, nbAnimal=25, sûr;
+
+
+
+//fonction pour adopter un animal//
+ Animal adoptAnimal(int chxA){
+    int nbAnimal=25;
+    printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
+    scanf("%d", &chxA);
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles \n");
+           exit(2);
+           break;
+       } 
+  
+ }
+ 
+
+
+
+ //fonction pour déposer un animal//
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
+   int nbAdepot, nbAnimal=25, sûr;
+
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles \n");
+           exit(2);
+           break;
+       } 
+  
+ }
+ 
+
+
+
+ //fonction pour déposer un animal//
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
+   int nbAdepot, nbAnimal=25, sûr;
+
+	char commentaire[1000];
+
+}Animal;
+
+
+//fonction pour adopter un animal//
+ Animal adoptAnimal(int chxA){
+    int nbAnimal=25;
+    printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
+    scanf("%d", &chxA);
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles \n");
+           exit(2);
+           break;
+       } 
+  
+ }
+ 
+
+
+
+ //fonction pour déposer un animal//
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
+   int nbAdepot, nbAnimal=25, sûr;
+
                   printf("Veuillez saisir une valeur cohérente: 1 ou 2 \n");
                   exit(1); 
                }
@@ -107,10 +370,9 @@ typedef struct{ //Caractéristiques d'un animal
     Animal constructeurAnimal(){ //ici on crée un animal
 	Animal a;
 	char Com[1000];
-	int nbE, rep, chien, chat, hamster, autruche;
-	a.espece=nbE;
+	int nbE, rep;
     a.commentaire[1000]=Com[1000];
-
+    char animal[10];
 	printf(" Numéro d'identification ? (6 chiffres) \n ");
 	  scanf("%d", &a.numid);
 	printf(" Quel est son nom ? \n");
@@ -125,18 +387,18 @@ typedef struct{ //Caractéristiques d'un animal
 	printf(" Quelle est son Espèce ? 0/chien 1/chat 2/hamster 3/autruche \n");
 	  scanf("%d", &nbE);
 	  if(nbE==0){
-	      nbE=chien;
+	      animal[10]=chien;
 	  }
 	  else if(nbE==1){
-	      nbE=chat;
+	      animal[10]=chat;
 	  }
 	  else if(nbE==2){
-	      nbE=hamster;
+	      animal[10]=hamster;
 	  }
 	  else{
-	      nbE=autruche;
+	      animal[10]=autruche;
 	  }
-	  
+	  printf(" %s ", &animal[10]);
 	printf(" Quel est son poids ? \n");
 	  scanf("%f", &a.poids);
 	    while(a.poids<=0.0 || a.poids>=200.0){
@@ -154,11 +416,12 @@ typedef struct{ //Caractéristiques d'un animal
 	  if(rep==0){
 	       printf(" Quel commentaire ? \n");
 	       scanf("%s", &Com[1000]);
+	       printf("\nL'animal enregistré est: \n\n %d\n %s\n %d\n %s\n %f\n %s\n ", a.numid, a.nom, a.anneenaissance, &animal[10], a.poids, &Com[1000]);
 	    }
 		else{
-			printf("\nL'animal enregistré est: \n\n %d\n %s\n %d\n %d\n %f\n  ", a.numid, a.nom, a.anneenaissance, nbE, a.poids); 
+			printf("\nL'animal enregistré est: \n\n %d\n %s\n %d\n %s\n %f\n  ", a.numid, a.nom, a.anneenaissance, &animal[10], a.poids); 
 		}
-	printf("\nL'animal enregistré est: \n\n %d\n %s\n %d\n %d\n %f\n %s\n ", a.numid, a.nom, a.anneenaissance, nbE, a.poids, &Com[1000]); 
+ 
     }
 
 
@@ -223,7 +486,135 @@ void modifier_animal(Animal a){
            modifier_animal(a);
        } 
      }
-     else if(choix==2){
+     else if(choix==2){#include"chenil.h"
+//#include"fonctions.c"
+
+
+
+typedef enum{ //liste des espèces présentes dans le chenil
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
+}Espece;
+
+typedef struct{ //Caractéristiques d'un animal
+
+	int numid;
+	char nom[100];#include"chenil.h"
+//#include"fonctions.c"
+
+
+
+typedef enum{ //liste des espèces présentes dans le chenil
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
+}Espece;
+
+typedef struct{ //Caractéristiques d'un animal
+
+	int numid;
+	char nom[100];
+	int anneenaissance;
+	Espece espece;
+	float poids;
+	char commentaire[1000];
+
+}Animal;
+
+
+//fonction pour adopter un animal//
+ Animal adoptAnimal(int chxA){
+    int nbAnimal=25;
+    printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
+    scanf("%d", &chxA);
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles \n");
+           exit(2);
+           break;
+       } 
+  
+ }
+ 
+
+
+
+ //fonction pour déposer un animal//
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
+   int nbAdepot, nbAnimal=25, sûr;
+
+	int anneenaissance;
+	Espece espece;
+	float poids;
+	char commentaire[1000];
+
+}Animal;
+
+
+//fonction pour adopter un animal//
+ Animal adoptAnimal(int chxA){
+    int nbAnimal=25;
+    printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
+    scanf("%d", &chxA);
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles \n");
+           exit(2);
+           break;
+       } 
+  
+ }
+ 
+
+
+
+ //fonction pour déposer un animal//
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
+   int nbAdepot, nbAnimal=25, sûr;
+
        printf(" Quel est son nouveau nom ? \n ");
        scanf("%s", a.nom);
      }
@@ -240,7 +631,71 @@ void modifier_animal(Animal a){
      }
      else if(choix==4){
        printf(" Quel est sa nouvelle espèce ? \n ");
-       scanf("%d", &espece);
+       scanf("%d", &espece);#include"chenil.h"
+//#include"fonctions.c"
+
+
+
+typedef enum{ //liste des espèces présentes dans le chenil
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
+}Espece;
+
+typedef struct{ //Caractéristiques d'un animal
+
+	int numid;
+	char nom[100];
+	int anneenaissance;
+	Espece espece;
+	float poids;
+	char commentaire[1000];
+
+}Animal;
+
+
+//fonction pour adopter un animal//
+ Animal adoptAnimal(int chxA){
+    int nbAnimal=25;
+    printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
+    scanf("%d", &chxA);
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles \n");
+           exit(2);
+           break;
+       } 
+  
+ }
+ 
+
+
+
+ //fonction pour déposer un animal//
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
+   int nbAdepot, nbAnimal=25, sûr;
+
        if(espece>=0 && espece<=3){
          a.espece=espece;
        }
@@ -264,7 +719,71 @@ void modifier_animal(Animal a){
        printf(" Quel est son nouveau commentaire ? \n ");
        scanf("%s", a.commentaire); 
      }
-     else{
+     else{#include"chenil.h"
+//#include"fonctions.c"
+
+
+
+typedef enum{ //liste des espèces présentes dans le chenil
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
+}Espece;
+
+typedef struct{ //Caractéristiques d'un animal
+
+	int numid;
+	char nom[100];
+	int anneenaissance;
+	Espece espece;
+	float poids;
+	char commentaire[1000];
+
+}Animal;
+
+
+//fonction pour adopter un animal//
+ Animal adoptAnimal(int chxA){
+    int nbAnimal=25;
+    printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
+    scanf("%d", &chxA);
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles \n");
+           exit(2);
+           break;
+       } 
+  
+ }
+ 
+
+
+
+ //fonction pour déposer un animal//
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
+   int nbAdepot, nbAnimal=25, sûr;
+
          printf(" Veuillez saisir un nombre entier situé entre 1 et 6 inclus ! \n ");
          modifier_animal(a);
      }
@@ -312,7 +831,135 @@ printf("                          |___/                         \n\n ");
             printf("========= Accès=publique ========= \n\n");
             printf("1) Voir nos pensionnaires. \n");
             printf("2) Adopter ou déposer un animal.  \n");
-            printf("3) Précédent.  \n\n");
+            printf("3) Précédent.  \n\n");#include"chenil.h"
+//#include"fonctions.c"
+
+
+
+typedef enum{ //liste des espèces présentes dans le chenil
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
+}Espece;
+
+typedef struct{ //Caractéristiques d'un animal
+
+	int numid;
+	char nom[100];
+	int anneenaissance;
+	Espece espece;
+	float poids;
+	char commentaire[1000];
+
+}Animal;
+
+
+//fonction pour adopter un animal//
+ Animal adoptAnimal(int chxA){
+    int nbAnimal=25;
+    printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
+    scanf("%d", &chxA);
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;#include"chenil.h"
+//#include"fonctions.c"
+
+
+
+typedef enum{ //liste des espèces présentes dans le chenil
+    chien=0, 
+    chat=1, 
+    hamster=2, 
+    autruche=3
+}Espece;
+
+typedef struct{ //Caractéristiques d'un animal
+
+	int numid;
+	char nom[100];
+	int anneenaissance;
+	Espece espece;
+	float poids;
+	char commentaire[1000];
+
+}Animal;
+
+
+//fonction pour adopter un animal//
+ Animal adoptAnimal(int chxA){
+    int nbAnimal=25;
+    printf(" Choisissez 0 ou 1 ou 2 ou 3 respectivement pour chien, chat, hamster, autruche \n et indiquez 4(stop), pour arrêter la demande. \n\n ");
+    scanf("%d", &chxA);
+       switch(chxA){
+        case 0:
+           printf("Vous avez choisi l'animal: chien \n");
+              
+           nbAnimal--;
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles \n");
+           exit(2);
+           break;
+       } 
+  
+ }
+ 
+
+
+
+ //fonction pour déposer un animal//
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
+   int nbAdepot, nbAnimal=25, sûr;
+
+           break;
+        case 1:
+           printf("Vous avez choisi l'animal: chat \n");
+           nbAnimal--;
+           break;
+        case 2:
+           printf("Vous avez choisi l'animal: hamster \n");
+           nbAnimal--;
+           break;
+        case 3:
+           printf("Vous avez choisi l'animal: autruche \n");
+           nbAnimal--;
+           break;
+        case 4:
+           printf("Vous venez d'arrêter la demande d'adoption. \n");
+           break;
+        default:
+           printf("La valeur entrée ne correspond à aucun des choix possibles \n");
+           exit(2);
+           break;
+       } 
+  
+ }
+ 
+
+
+
+ //fonction pour déposer un animal//
+ Animal depotAnimal(int numid, char nom, Espece espece, int anneenaissance, float poids, char commentaire){
+   int nbAdepot, nbAnimal=25, sûr;
+
             printf("================================== \n\n");
             printf("Entrez une action: \n");
                scanf("%d",&nbPu);
