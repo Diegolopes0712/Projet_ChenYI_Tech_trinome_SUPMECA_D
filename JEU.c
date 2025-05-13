@@ -380,6 +380,9 @@ printf("                          |___/                         \n\n ");
                     switch(nbPl){
                        case(1):
                           printf("Votre action: %d \n" , nbPl);
+			  printf("================================== \n\n");
+                             int listA;
+                             A=liste(listA); 
                           return 0;
                           break;
         
