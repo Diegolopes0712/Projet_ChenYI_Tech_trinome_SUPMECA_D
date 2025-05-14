@@ -1,20 +1,25 @@
 Rapport projet ChenYl-Tech
 
 Organisation :
-Nous avons décidé de travailler sur ChenYl Tech. Nous avons partagé des tâches pour avancer sur notre projet le plus rapidement possible. Nous avons également avancé notre projet pendant les vacances pour le terminer.
+Nous avons décidé de travailler sur le projet "ChenYl Tech". Nous nous sommes partagés les tâches pour avancer le plus rapidement possible. En quelques mots, nous avons tous participés à la réalisation du projet.
 
 Choix importants :
-Nous avons choisi le tri fusion car il s’agit de l’un des tris les plus rapides dont sa fonction est robuste et stable.
-Nous avons séparé les points c et les points h pour faire notre projet en plusieurs codes afin de faciliter le travail.
-Nous avons également créé des tableaux pour chaque espèce et pour chaque animal pour classer les animaux en fonction de leurs caractéristiques (âge, espèce, nom).
-Nous avons également utilisé des boucles pour les conditions dans presque tous les codes .c pour demander à l’utilisateur de saisir les caractéristiques de l’animal, d’adopter et d’accueillir l’animal dans le chenil.
-Nous avons utilisé des numéros pour chaque espèce (chien = 0, chat = 1, hamster = 2, autruche = 3) pour les identifier plus facilement.
+-Nous avons décomposés nôtre JEU en 3 parties, une principale qui contient toutes les fonctions et les structures (à cause de problèmes fréquents, nous n'avons pas réussi a faire plusieurs .h et .c comme demandés), un .h qui contient les bibliothèques nécessaires, et un fichier .txt qui regroupe la totalité des pensionnaires.
+-Nous avions choisi un tri fusion pour ranger les différentes espèces dans l'ordre décroissant (l'une des variantes) car il s’agit de l’un des tris les plus rapides et dont sa fonction est robuste et stable. Malheureusement, la fonction qui contient ce tri n'a pas été utilisée par manque de temps.
+-Nous avions également créé des tableaux pour chaque espèce et pour chaque animal pour classer les animaux en fonction de leurs caractéristiques (âge, espèce, nom). Cette fonction devait fonctionner en parallèle avec le tri fusion.
+-Nous avons utilisé des boucles pour les conditions dans presque toutes les fonctions pour demander à l’utilisateur de saisir les caractéristiques de l’animal, d’adopter ou d’accueillir l’animal dans le chenil.
+-Nous avons utilisé des numéros pour chaque espèce (chien = 0, chat = 1, hamster = 2, autruche = 3) pour les identifier plus facilement.
 
 Limite :
-Nous avons rencontré des difficultés lors du projet ChenYl Tech.
-Nous avons rencontré des difficultés sur la structure. En effet, comme nos parties de codes sont dépendantes de la partie sur la structure, on ne pouvait pas savoir si nos parties de code fonctionnent, ce qui nous fait ralentir le projet. La prof d’informatique nous a aidés à finir la partie sur la structure. 
-Nous avons également rencontré des difficultés sur la partie où on doit trier des animaux par espèce. En effet, le choix du tri n’est pas facile et le tri fusion n’est pas évident à coder. Nous avons fait des recherches sur Internet pour faire le tri fusion sur un de nos codes en C.
+-Nous avons rencontré des difficultés lors du projet ChenYl Tech; tout d'abord, le manque d'organisation nous a causé des problèmes de temps.
+-Nous avons rencontré des difficultés sur la structure (et l'énumération). En effet, comme nos parties de codes sont dépendantes de la partie sur la structure (et énumération), des problèmes de types nous ont fait ralentir le projet. Ce problème a fini par être réglé.
+-Nous avons également rencontrés des difficultés sur la partie où on doit trier des animaux par espèce. En effet, le choix du tri n’est pas facile et le tri fusion n’est pas évident à coder. Nous avons fait des recherches sur Internet pour le faire sur un de nos codes en C. 
+-La variante dayfood et la variante ordredécroissant, qui sont dépendantes des tableaux, n'ont pas pu être raccordées au code principal par manque de temps.
+-Nous avons mis toutes les fonctions et les structures sur une seule et même page (455 lignes), ce qui fait beaucoup et n'est pas forcément très lisible.
+
+Conclusions:
+Pour conclure, faire ce projet nous a donné du fil à retordre, mais principalement à cause du manque de temps (faute de nôtre part), malgré ça nous avons appris beaucoup en "peu de temps", par exemple le fait de travailler sur plusieurs fichier et de les relier entres eux. Au final, le JEU peut compiler sur Linux et Windows (voir readme pour plus d'informations), même s'il manque une grande partie du code: le dayfood, l'ordredécroissant, les tableaux, les fonctions pour revenir en arrière dans le jeu et peut-être aussi un peu de couleur et d'esthétisme.
 
 Bonus : 
-Nous avons créé le menu principal pour l’interface du jeu afin de rendre notre projet plus animé.
+Nous avons créé le menu principal pour l’interface du jeu afin de rendre notre projet plus animé et joli pour l'utilisateur.
 
